@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:reciperealm/core/router/app_router.dart';
+import 'package:reciperealm/Features/home/presentation/view/home_view.dart';
 import 'package:reciperealm/core/theme/theme_light.dart';
-void main() {
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+);
   runApp(const RecipeRealm());
 }
 
 class RecipeRealm extends StatelessWidget {
   const RecipeRealm({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -17,12 +23,13 @@ class RecipeRealm extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (_ , child) {
-      return MaterialApp.router(
-        title: 'RecipeRealm',
-        theme: getThemeDataLight(),
-       routerConfig:AppRouter.router,
-      );
-       }
+      return MaterialApp(
+          title: 'RecipeRealm',
+          theme: getThemeDataLight(),
+        // routerConfig:AppRouter.router,
+        home: HomeView(),
+        );
+      }
     );
   }
 }

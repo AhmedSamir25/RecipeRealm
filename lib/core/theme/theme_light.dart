@@ -4,9 +4,8 @@ import 'package:reciperealm/core/theme/text_styles.dart';
 
 ThemeData getThemeDataLight() => ThemeData(
       primaryColor: colorApp,
-
       elevatedButtonTheme: ElevatedButtonThemeData(
-        style: ButtonStyle(
+        style: ButtonStyle(        
           elevation: const MaterialStatePropertyAll(4),
           // color background elevated button = ornge
           backgroundColor: const MaterialStatePropertyAll(colorbackgroud),

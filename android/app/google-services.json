@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "393595933155",
+    "project_id": "reciperealm-7b6e5",
+    "storage_bucket": "reciperealm-7b6e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393595933155:android:007dd8083d6544749210d6",
+        "android_client_info": {
+          "package_name": "com.example.reciperealm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393595933155-critj13j01377o76vmqet9gepskj4bsd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKOs_wcvvTzzSHpQNwiQDcdJO8xn6dHkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393595933155-bhfr2iaqgrpa19e6v6gmlr8sf86kkiov.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "393595933155-iu1msq5t3sbqp6ef1b8c2fu0jv5vcn3a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.reciperealm"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
